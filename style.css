@@ -76,13 +76,14 @@ header{
     font-weight: bold;
 }
 .switch-continue button.active{
-    background-color: #4070f4;
+    background-image: linear-gradient(to right,#4070f4,darkblue ,purple);
 }
 .main-entry{
     max-width: 1200px;
     margin: auto;
     width: 100%;
-    padding-top: 50px;
+    display: grid;
+    place-content: center;
 }
 .main-entry h1, .main-entry p{
     text-align: center;
@@ -111,6 +112,13 @@ h1{
     font-weight: bold;
     font-size: large;
 }
+.bottom_salv{
+    background-color: #222;
+    width: 100%;
+    height: 20px;
+    border-radius: 50% 50% 0px 0px;
+    border-top: 1px solid rgba(225, 255, 225, .075);
+}
 @media screen and (max-width:700px) {
     h1{
         font-size: 6vmin;
@@ -130,5 +138,8 @@ h1{
     }
     .p{
         font-size: small;
+    }
+    .switch-continue button{
+        padding: 0px 7.5px;
     }
 }
