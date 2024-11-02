@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Concert+One&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Pangolin&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: font;
+    /* font-family: "Bricolage Grotesque", sans-serif; */
+}
+@font-face {
+    font-family: font;
+    src: url(MADEOkineSansPERSONALUSE-Regular.otf);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #0D0D0D;
+    color: #ffffff;
+    /* background-image: linear-gradient(rgba(225,225,225,.075) .1em, transparent .1em), linear-gradient(90deg, rgba(225, 255, 225, .075) .1em, transparent .1em); */
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+}
+.a{
+    max-width: 1200px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    /* background-color: rgba(225,225,225,.1); */
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    border: 1px solid rgba(225, 255, 225, .075);
+    width: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #111;
+    background-color: #222;
+    padding:5px  7.5px ;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.a1{
+    height: 100%;
+    width: 28px;
+    background-color: #4070f4;
+    border-radius: 50%;
+    background-image: url(logo.svg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.a2{
+    padding:0px 7.5px 0px 7px;
+    font-size: 10px;
+}
+.switch-continue{
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+}
+.switch-continue button{
+    padding: 0px 15px;
+    border-radius: 30px;
+    border: none;    
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+}
+.switch-continue button.active{
+    background-color: #4070f4;
+}
+.main-entry{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding-top: 50px;
+}
+.main-entry h1, .main-entry p{
+    text-align: center;
+    color: #f9f9f9;
+}
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0px 15px;
+}
+.main-entry .p{
+    padding: 10px 20px 0px;
+}
+.get-started-modal{
+    max-width: 350px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#4070f4,darkblue ,purple);
+    /* border: 2px solid rgba(0, 0, 0, .51); */
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+}
+@media screen and (max-width:700px) {
+    h1{
+        font-size: 6vmin;
+    }
+    .p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:590px) {
+    h1{
+        font-size: 6.5vmin;
+    }
+}
+@media screen and (max-width:490px) {
+    h1{
+        font-size: 6.9vmin;
+    }
+    .p{
+        font-size: small;
+    }
+}
